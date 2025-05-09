@@ -1,4 +1,5 @@
 function isSameType(a, b) {
+	return isNaN(a) === isNaN(b)
 	const numA = !isNaN(a) && a.trim() !== '' ? Number(a) : a;
     const numB = !isNaN(b) && b.trim() !== '' ? Number(b) : b;
     
