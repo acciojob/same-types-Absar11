@@ -1,10 +1,9 @@
 function isSameType(a, b) {
-	if(typeof(a) === typeof(b)){
-		return true;
-	}
-	else{ 
-		return false; 
-	}
+	const numA = !isNaN(a) && a.trim() !== '' ? Number(a) : a;
+    const numB = !isNaN(b) && b.trim() !== '' ? Number(b) : b;
+    
+    // Compare types
+    return typeof numA === typeof numB;
 
 }
 
