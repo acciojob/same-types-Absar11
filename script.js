@@ -1,5 +1,11 @@
-function isSameType(value1, value2) {
-  //your js code here
+function isSameType(a, b) {
+	if(typeof(a) === typeof(b)){
+		return true;
+	}
+	else{ 
+		return false; 
+	}
+
 }
 
 // do not change the code below.
